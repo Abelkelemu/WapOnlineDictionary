@@ -22,14 +22,13 @@ header .top{
     display: flex;
     align-items: center;
     border: 3px groove gray;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 h1.title{
     padding-left: 1.5rem;
     font-size: 2rem;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
 }
 
 header .bottom{
@@ -78,7 +77,6 @@ button:hover{
 }
 
 .main{
-    
     background-color: #E5E4E2;
     height: calc(100% - 6em - 5em - 6em);
 }
@@ -124,7 +122,3 @@ footer{
     font-size: 1rem;
     font-weight: bold;
 }
-
-
-
-

@@ -19,7 +19,7 @@ app.get("/lookup", async function (req,res){
         res.status(200).json(result)
     }catch(err){
         console.error(err);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: 'Internal Server Problem.  Please, try again later.' });
     }
 })
 app.listen(3000, () => {
