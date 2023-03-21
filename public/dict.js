@@ -11,14 +11,13 @@ function lookup(){
     if($("#word").val().length ==0){
         return;
     }
-    $.ajax({
-        url: "http://localhost:3000/lookup",
+    $.ajax("http://localhost:3000/lookup",{
         type: "GET",
         data: { word:$("#word").val()},
-        dataType: "json",
-        "success" : showDefinition,
-        "error": noWord
+        dataType: "json",  
     })
+    .done(showDefinition)
+    .fail(noWord)
 }
 
 function showDefinition(data){
