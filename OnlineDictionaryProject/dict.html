@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAP Online Dictionary</title>
+    <link rel="icon" type="image/jpg" href="./fav.jpg">
+    <link rel="stylesheet" href="./dict.css">
+    <script src="./jquery-3.6.3.js"></script>
+    <script src="./dict.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1 class="title">WAP Online Dictionary</h1>
+        </div>
+        <div class="bottom">
+                <input type="text" name="word" id="word">
+                <button id="lookup">Lookup</button>
+                <div id="loader"></div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div id="definitions">
+            <ul id="definition"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class = "footerContent">
+            <p>&copy; 2023  Abel K Dessalegne </p>
+            <a class="checker"
+                href="https://validator.w3.org/nu/check/referer"> <img
+                src="https://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                alt="html validator">
+            </a>
+            <a class="checker"
+                href="https://jigsaw.w3.org/css-validator/check/referer"> <img
+                src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+                alt="css validator">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

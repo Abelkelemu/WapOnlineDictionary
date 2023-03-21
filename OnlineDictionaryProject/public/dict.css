@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid #a6c0a6 ;
+    background-color: rgb(242, 242, 242);
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+h1, input, button, p{
+    margin: 0;
+}
+
+header .top{
+    height: 6em;
+    background-color:#c4dfc4;
+    display: flex;
+    align-items: center;
+    border: 3px groove gray;
+    box-sizing: border-box;
+    
+}
+
+h1.title{
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    
+}
+
+header .bottom{
+    background-color: #d3d3d3;
+    height: 5em;  
+    display: flex;
+    align-items: center;
+}
+
+.bottom input{
+    height: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 0.2rem;
+    margin-left: 2.5rem;
+    min-width: 20rem;
+}
+
+button{
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: #a6c0a6;
+}
+
+button:hover{
+    color: blue;
+}
+
+#loader{
+    display: none;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09c;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.main{
+    
+    background-color: #E5E4E2;
+    height: calc(100% - 6em - 5em - 6em);
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+li:nth-child(even){
+    background-color: #c4dfc4;
+    border-radius: 1rem;
+}
+
+li:nth-child(odd){
+    background-color: #a6c0a6;
+    border-radius: 1rem;
+}
+
+#definitions{
+    overflow: scroll;
+    height: 100% ;
+}
+#definition{
+    min-width: 30rem;
+    padding: 1.5rem;
+}
+
+footer{  
+    background-color: #c4dfc4;
+    height: 6em;
+}
+
+.footerContent{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
