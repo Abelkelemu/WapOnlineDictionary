@@ -21,6 +21,7 @@ function lookup(){
 }
 
 function showDefinition(data){
+    data = JSON.parse(data);
     var myString = "";
     if(data.length ==0){
         myString = `<li>

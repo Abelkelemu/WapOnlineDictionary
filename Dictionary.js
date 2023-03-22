@@ -15,7 +15,8 @@ app.get('/', function(req,res){
 app.get("/lookup", async function (req,res){
     let theWord = req.query.word;
     try{
-        const result = await getDef(theWord);
+        var result = await getDef(theWord);
+        result = JSON.stringify(result);
         res.status(200).json(result)
     }catch(err){
         console.error(err);
